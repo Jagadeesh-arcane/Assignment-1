@@ -1,0 +1,31 @@
+HTML Structure:
+
+<!DOCTYPE html>: Declares the document type and version of HTML.
+<html lang="en">: The root element of the HTML document, indicating that the language is English.
+<head>: Contains metadata about the HTML document.
+<meta charset="UTF-8">: Specifies the character encoding.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Sets the viewport properties for responsive design.
+<title>HTML Form</title>: Sets the title of the HTML document.
+Styles are embedded within a <style> tag.
+<body>: Contains the content of the HTML document.
+
+
+CSS Styling:
+
+The <style> tag contains CSS rules for styling the form and its elements.
+The body has a background color, and the form is styled with a white background, padding, border-radius, and a box shadow.
+Form elements like labels and inputs have specific styling for layout and appearance.
+An animation (fadeIn) is defined to gradually make the form visible.
+Form Structure:
+
+The <form> element has an ID (myForm) and an onsubmit attribute, calling the submitForm function when the form is submitted.
+Labels and input fields are provided for name, email, and age. The "name" and "email" inputs are marked as required.
+
+
+JavaScript:
+
+A <script> tag contains JavaScript code.
+The submitForm function is defined to handle the form submission.
+event.preventDefault() prevents the default form submission behavior.
+The function retrieves values from the name, email, and age fields, creates a JSON object, converts it to a formatted JSON string, and creates a Blob (binary large object) containing the JSON data.
+A dynamically created link (<a>) is used to download the Blob as a JSON file.
